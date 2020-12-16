@@ -1,1 +1,1 @@
-Folder containing exercise on linear algebra using numpy
+Folder containing exercises on linear algebra using numpy
