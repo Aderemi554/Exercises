@@ -1,1 +1,1 @@
-Completed exercise on web scraping done with my programming partner
+Completed exercise on web scraping done with teammates.
