@@ -1,1 +1,1 @@
-Exercises for Computer Vision Module.
+Exercises for Computer Vision Module
