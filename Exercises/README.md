@@ -1,2 +1,2 @@
 # submission
-A folder containing solved exercises ready for submission
+This folder contains solved exercises ready for submission
