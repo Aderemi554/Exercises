@@ -1,0 +1,42 @@
+body {
+  background-color: pink;
+  max-width: 1080px; 
+  margin: 0 auto; 
+  float: none ;
+  font-family: 'Tangerine', serif;
+  font-size: 24px;
+}
+
+h1 {
+  color: blue;
+  text-align:center;
+}
+
+p {
+  color: blue;
+  border-style: dashed;
+  margin: 0 0 10px;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+img {
+	height: 250px;
+	width: 250px;
+}
+
+input {
+	height: 30px;
+	width: 200px;
+}
+
+textarea {
+	height: 200px;
+	width: 300px;
+}
+
+
+#submit:hover{
+  color:white!important;/*color of the text*/
+  background: gray!important;/*Background color*/
+}
