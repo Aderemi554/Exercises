@@ -1,0 +1,12 @@
+namep,topic,st,grade,id,teacher
+pandas,100 pandas,0,4.8,0,Jan 
+numpy,100 numpy,1,4.2,1,Antonio
+nlp,text mining,2,4.5,2,Javi
+cv,lane detection,3,4.6,3,George
+cv,face detection,4,4.3,4,George
+ml,iris dataset,5,4.5,5,Javi
+deep learning,titanic,6,4.6,6,Jan
+feature engineering,sales prediction,7,4.2,7,Antonio
+python,weather app,8,4,8,Jan
+web scraping,best movies 2020,9,4.7,9,Jan
+deployment,streamlit,10,4.6,10,Jon 
