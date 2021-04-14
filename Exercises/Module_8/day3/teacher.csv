@@ -1,0 +1,6 @@
+name,surname,id,country,speciality,salary
+Jan,Frank,0,Spain,Python,2200
+Antonio,Anderson,1,Brazil,feature engineering,2000
+Javi,Solomon,2,America,nlp,2000
+George,Cooper,3,England,cv,2300
+Jon,Peter,4,Finland,deployment,2000
