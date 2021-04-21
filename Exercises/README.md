@@ -1,2 +1,2 @@
 # submission
-## This folder contains solved exercises ready for submission
+## This folder contains solved exercises that ready for submission
