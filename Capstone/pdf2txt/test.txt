@@ -1,0 +1,3789 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/350952336
+
+Effects of Layer-Charge Distribution on Swelling Behavior of Mixed-Layer
+Illite-Montmorillonite Clays: A Molecular Dynamics Simulation Study
+
+Article  in  Journal of Molecular Liquids · April 2021
+
+DOI: 10.1016/j.molliq.2021.116188
+
+CITATIONS
+0
+
+2 authors, including:
+
+Me Ghasemi
+Nazarbayev University
+
+6 PUBLICATIONS   27 CITATIONS   
+
+SEE PROFILE
+
+READS
+35
+
+Some of the authors of this publication are also working on these related projects:
+
+Molecular Dynamics Simulation of Clay Swelling View project
+
+All content following this page was uploaded by Me Ghasemi on 29 April 2021.
+
+The user has requested enhancement of the downloaded file.
+
+Journal of Molecular Liquids 335 (2021) 116188
+
+Contents lists available at ScienceDirect
+
+Journal of Molecular Liquids
+
+j o u r n a l h o m e p a g e : w w w . e l s e v i e r . c o m / l o c a t e / m o l l i q
+
+Effects of layer-charge distribution on swelling behavior of mixed-layer
+illite-montmorillonite clays: A molecular dynamics simulation study
+
+Mehdi Ghasemi, Mohammad Shariﬁ
+
+⇑
+
+Department of Petroleum Engineering, Amirkabir University of Technology, Tehran, Iran
+
+a r t i c l e
+
+i n f o
+
+a b s t r a c t
+
+Article history:
+Received 30 March 2021
+Accepted 13 April 2021
+Available online 17 April 2021
+
+Keywords:
+Mixed-layer illite-montmorillonite clays
+Swelling
+Charge distribution
+Molecular dynamics simulation
+
+One of the intriguing properties of clay minerals is swelling, which is considered an essential
+characteristic for various geological processes, environmental science, and engineering. Almost all
+previous experimental and simulation studies focused on the understanding of the swelling behavior
+of pure clays. The fact is that about 30 percent of all clays are a pure type, and virtually 70 percent of clays
+are the mixed-layer one that swelling mechanism is still elusive. In this research, molecular dynamics
+simulations were used to exclusively investigate the effect of layer charge distribution on the crystalline
+swelling and hydration behavior of
+so-called
+illite-montmorillonite mixed-layer clay (I-Mt MLC) with Na+ and K+ counterions in the presence of differ-
+ent water concentrations. Based on the results, we found that the layer charge density and charge loca-
+tion of both illite and Mt signiﬁcantly inﬂuenced the I-Mt clays’ swelling behavior. Regardless of Mt
+charge density, the presence of highly charged illite led to powerful interactions of counterions with
+the surface sheet, resulting in less swelling behavior of the I-Mt system. Also, the various polarization
+power of clay surface due to the difference in charge distribution of octahedral sheets had a signiﬁcant
+inﬂuence on water molecules and interlayer cations interaction with clay surface, which affected the
+swelling behavior of I-Mt clays. Overall, our ﬁndings demonstrated the new insight into I-Mt clays’ swel-
+ling behavior, which is a function of charge distribution of both illite and Mt.
+
+common types of mixed clays,
+
+the most
+
+Ó 2021 Elsevier B.V. All rights reserved.
+
+1. Introduction
+
+Clay minerals, as ﬁne-grained and porous materials, are formed
+in the weathering and pedogenic processes and constitute a large
+portion of soils and sediments [1]. Clays are characterized by a
+large surface area, strong adsorption capacity, and high swelling
+capacity, which make them valuable compounds in a broad spec-
+trum of applications of environmental remediation [2,3] geological
+processes [4-6], nuclear waste disposal [7-10] chemical catalysis
+[11-13], drug delivery [14-16], and in drilling ﬂuids to modify
+the rheology and control the borehole stability of oil and gas wells
+[17-20]. In particular, the swelling behavior of clays is of signiﬁcant
+importance in the oil and gas industry, as clays in various types are
+found in geological formation as well as drilling ﬂuids. In fact, dur-
+ing the drilling operation, water interactions as a base of major
+drilling ﬂuids with clayey formations can cause swelling, which
+results in wellbore instability. Therefore, understanding the swel-
+ling behavior of clayey formation is a critical
+factor in the
+
+⇑ Corresponding author.
+
+E-mail address: m_shariﬁ@aut.ac.ir (M. Shariﬁ).
+
+https://doi.org/10.1016/j.molliq.2021.116188
+0167-7322/Ó 2021 Elsevier B.V. All rights reserved.
+
+successful design of drilling ﬂuid and utilizing the proper clay
+swelling inhibitors [19,21].
+
+According to the previous studies, the swelling behavior of clays
+exhibits two stepwise regimes, including crystalline and osmotic
+swelling [22,23]. Crystalline swelling of clay minerals occurs in a
+stepwise formation of one to three hydration states from the dehy-
+drated state through a gradual increase of water adsorption in the
+clay interlayer. The interlayer space ranges from 9 to around 19 Å
+for crystalline swelling [24-26]. Virtually all types of clay minerals
+display crystalline swelling in the presence of a water solution.
+Osmotic swelling occurs due to an increase in interlayer water
+intake from an aqueous solution that culminates in interlayer
+expansion from 20 to 130 Å [25,27,28]. Contrary to crystalline
+swelling, osmotic swelling of clay minerals is only limited to some
+speciﬁc clays [29,30].
+
+There are comprehensive studies of interlayer swelling on pure
+clay systems. Based on previous researches, various inﬂuencing
+factors have been introduced to understand the swelling behaviors
+of clay minerals. Factors related to the clay such as charge site loca-
+tion and charge density [26,27,29-31], ion size [22,32,33], ion
+charge [32-34], and identity of interlayer ions [24,29,35,36] can
+affect clay swelling. As stated previously, the swelling properties
+
+M. Ghasemi and M. Shariﬁ
+
+Journal of Molecular Liquids 335 (2021) 116188
+
+of clay minerals are not the same in which Na+-montmorillonite
+(Na+-Mt) tends to swell easily from monolayer hydration state
+up to osmotic swelling, while K+-illite (K+-I) has less tendency to
+swell [36]. Regarding the impact of charge location and charge
+density on clay swelling, previously reported results are restricted,
+and drawing the exact conclusions is nearly impossible. For exam-
+ple, Liu and Lu [36] showed that in large charge density on tetrahe-
+dral sheets, clay interlayer experiences more expansion compared
+to clay with a high charge density of octahedral sheets. These com-
+parisons were conducted for three different water contents. In
+comparing the swelling behavior of Otay- montmorillonite (Otay-
+Mt), in which concentration of charge is on octahedral sheets with
+Wyoming-Mt that has less charge density on octahedral sheets,
+Chávez-Páez et al. [38] revealed that interlayer expansion of the
+Otay-Mt is lower than Wyoming-Mt. Smith et al. [39] assessed
+the effect of octahedral charge density on swelling of Na-Mt, and
+they found that more charge density on octahedral sheets results
+in higher interlayer expansion. However, Foster [40] reported a
+reduction in swelling of Mt as the charge density of octahedral
+sheets increases. Seppälä et al. [41] claimed that the smaller the
+layer charge, the greater swelling would result. Sun [42] and Great-
+house et al. [43] found similar results. Skipper et al. [44] reported
+that increasing the tetrahedral charge layer of Na+-Mt leads to
+increasing interlayer expansion. Interaction of water with Mt and
+beidellite was studied by Teich-McGoldrick et al. [29]. They
+showed that in the case of low water content between interlayers,
+beidellite, which has a similar structure to illite, expands more
+than Mt. However, Mt showed more interlayer expansion at a high
+water content. Also, they observed that the beidellite formed the
+bilayer hydration state at low water content compared to Mt. More
+recently, Li et al. [37] found that clay minerals with different
+charge locations and charge densities display divergent swelling
+behaviors. They showed that K+ has dual characteristics in which
+their behavior as swelling inhibitors relies on the charge location
+of clay. However, Ferrage et al. [45] reported that due to the low
+hydration of K+ and their perturbable characteristics, they could
+act as a clay swelling inhibitor.
+
+Most of the studies related to clay swelling have been focused
+on pure clays. In 2018, for the ﬁrst time, the swelling behavior of
+mixed-layer clays (MLCs), including I-Mt clays for a wide range
+of water concentrations in the presence of Na+ and K+, were inves-
+tigated [46]. They showed that the swelling behavior of I-Mt is sig-
+niﬁcantly different from pure clay and depends on both clay types
+and interlayer cations. More recently, a comprehensive study was
+conducted on the swelling behavior of a chlorite-montmorillonite
+mixed-layer clay (CH-Mt MLC) as a function of interlayer cation
+including Na+, K+, and Cs+ [47].
+
+The fact is that in addition to the pure clays, plenty of MLCs can
+be found in various types of sedimentary rocks [48,49]. Among dif-
+ferent kinds of MLCs, illite-montmorillonite (I-Mt) is the most
+abundant compared to others such as CH-Mt or even illite-
+chlorite-montmorillonite (I-CH-Mt). As previously mentioned, var-
+ious factors affect the swelling behavior of pure clays. However,
+these factors may have different inﬂuences on the swelling behav-
+ior of MLCs. In the present study, we focused on I-Mt MLCs. As is
+known, both the illite and Mt consist of negatively charged octahe-
+dral sheets of alumina (O) and tetrahedral sheets of silica (T). They
+are categorized as TOT type clay which means that the octahedral
+sheet is located between two tetrahedral sheets. The negative
+charge of layers comes from the isomorphic substitution of layers
+in which Si+4 is replaced with Al+3 in tetrahedral sheets, and Al3+
+in octahedral sheets is substituted with Mg2+. The major difference
+between the two mentioned clays is related to the location of iso-
+morphic substitution. Most of the charge distribution of illite and
+Mt are on the tetrahedral and octahedral sheets, respectively. The
+interlayer counterions of Mt can be Na+, Ca2+, and Mg2+, and the
+
+illite is balanced by K+. As previously
+negative charge of
+mentioned, the nature of these cations also greatly inﬂuences the
+swelling of clays. Therefore, the presence of two types of counteri-
+ons, in this study Na+ and K+, with various concentrations between
+the two different clay sheets makes swelling process analysis more
+complex.
+
+Almost all previous investigations of the effects of charge distri-
+bution on clay swelling behavior have been limited to pure clay to
+date except works by Rahromostaqim and Sahimi [46,47]. How-
+ever, no comprehensive research has been conducted on the I-Mt
+MLCs with various charge densities and charge locations to know
+their effects on swelling behavior. In this work, the impacts of
+the surface charge distribution by considering charge density and
+charge location on the swelling behavior of K+-illite-Na+-
+montmorillonite (K+-I-Na+-Mt) were investigated for a wide range
+of water concentrations. Four mixed layers I-Mt clay mineral struc-
+tures with different charge densities (i.e., high charge (HC) and low
+charge (LC)) were considered. The molecular dynamics (MD) simu-
+lation technique has been applied to provide insight into the
+effects of the mentioned factors. To better understand the swelling
+mechanism, the results obtained from swelling behavior analyses
+of the pure Mt and pure illite interlayers are regarded as a refer-
+ence for comparison with the other simulated cases.
+
+The remainder of this paper is organized as follows. First, we
+describe the simulation systems and procedures in Section 2. Then,
+the results are presented in Section 3, and the summary of the
+paper is drawn in the last section.
+
+2. Methodology
+
+2.1. Model construction
+
+The 2:1 clay mineral models were constructed based on the
+pyrophyllite structure with a chemical formula of Al4Si8O20(OH)4.
+The lattice parameters of the pyrophyllite unit cell are: a = 5.16 Å,
+b = 8.97 Å, and c = 9.37 Å, and a = 91.5°, b = 100.46°, and c = 89.6°
+[50]. As is mentioned, Na+-Mt and K+-I were used with different
+charge site locations and charge densities on the octahedral and
+tetrahedral sheets to assess the swelling behavior of MLCs. The
+chemical structure of the clays is characterized by the random iso-
+morphic substitution of Al3+ by Mg2+ atoms and Si4+ by Al3+ atoms
+in the octahedral and the tetrahedral sheet, respectively. The iso-
+morphic substitutions also obey Loewenstein’s rule to avoid two
+adjacent substitutions. In the present study, four different types
+of mixed layers I-Mt clays were simulated that their chemical com-
+positions and a charge per unit cell (uc) of them are shown in
+Table1, and the initial structures of the clay mineral layer are
+demonstrated in Fig. 1.
+
+The supercell model of constructed I-Mt MLCs includes 4 clay
+sheets (two sheets each of illite and Mt), where each layer contains
+5  4 unit cells. As an example, for the case of I (HC)-Mt (HC) with
+20 unit cells, the model has 20 isomorphous substitutions of Al3+
+by Mg2+ in the octahedral sheets of Mt. In the illite clay sheets, 4
+Al3+ were replaced with Mg2+ in the octahedral sheet as well as
+replacement of 32 Si4+ with Al3+ in the tetrahedral sheet (16 in each
+tetrahedral sheet). To balance the generated negative charge of lay-
+ers, according to the charge quantity, counterions were added into
+the interlayers. Therefore, 10 Na+ and 18 K+ were added between
+the interlayer of Mt-Mt and I-I interlayers, while the remaining
+cations were distributed between I-Mt clay interlayers.
+
+2.2. Molecular dynamics simulation
+
+All MD simulations were performed using GROMACS 5.1.2 Soft-
+ware [51]. To generate the molecular structure of MLCs, CLAYFF
+
+2
+
+M. Ghasemi and M. Shariﬁ
+
+Table 1
+Chemical Compostion of Simulated MLCs.
+
+Item
+
+1
+
+2
+
+3
+
+4
+
+Type of MLC
+
+I (HC)-Mt (HC)
+
+I (HC)-Mt (LC)
+
+I (LC)-Mt (HC)
+
+I (LC)-Mt (LC)
+
+Chemical Compositions
+
+I
+Mt
+I
+Mt
+I
+Mt
+I
+Mt
+
+Journal of Molecular Liquids 335 (2021) 116188
+
+4
+
+4
+
+Þ
+
+Þ
+
+ Al3Mg
+½
+
+O20 OHð
+
+K1:8½Si6:4Al1:6½Al3:8Mg0:2O20 OHð
+Na Si8½
+K1:8½Si6:4Al1:6½Al3:8Mg0:2O20 OHð
+Na0:75½Si7:75Al0:25½Al3:5Mg0:5O20 OHð
+ Al4
+½
+½
+K Si7Al
+Na Si8½
+ Al3Mg
+½
+ Al4
+½
+½
+K Si7Al
+Na0:75½Si7:75Al0:25½Al3:5Mg0:5O20 OHð
+
+O20 OHð
+O20 OHð
+
+4
+
+Þ
+O20 OHð
+Þ
+
+Þ
+
+4
+
+Þ
+
+4
+
+4
+
+ 1
+e.uc
+ 1:8
+ 1:0
+ 1:8
+ 0:75
+ 1
+ 1.0
+ 1.0
+ 0:75
+
+Þ
+
+4
+
+Þ
+
+4
+
+Fig. 1. Top view of the initial structures of clay mineral layer: (a) Mt (HC), (b) Mt (LC), (c) I (HC), and (d) I (LC). The left and the right sheets are tetrahedral and octahedral,
+respectively. Si4+, Al3+, and Mg2+ are colored as orange, blue, and brown.
+
+foreﬁeld [52] was used in combination with the ﬂexible point
+charge (SPC) model for modeling the interlayer water molecules
+[53]. In each simulation, the systems were minimized using the
+steepest descent method. After energy minimization, 2 ns MD sim-
+ulations in an isothermal   isobaric ensemble (NPT) were con-
+ducted with the time step of 0.01 fs at the condition of T = 348 K
+and P = 130 bar [54]. Then, the equilibrated system was put into
+the additional 10 ns second of NPT with the time step of 1 fs at
+the same pressure and temperature conditions to calculate the
+basal spacing d-value of interlayers. At the ﬁnal stage, 5 ns NVT
+simulations were conducted to achieve the equilibrated conﬁgura-
+tions. The density proﬁle and the radial distribution function were
+calculated from the equilibrated conﬁgurations. In all simulations,
+the temperature and the pressure were controlled using
+a V-rescale thermostat [55] and isotropic Parrinello-Rahman algo-
+rithms [56], respectively. Periodic boundary conditions were
+imposed in three directions, and applying the semi-isotropic pres-
+sure allowed the system to freely expand the clay layers along the
+Z-axis (See Fig. 2). To calculate long-range electrostatic interaction,
+the particle-mesh Ewald (PME) summation method was applied
+with an accuracy of 10 4. At the same time, the cut-off radius
+was adjusted 1.4 nm for both Van Der Waals (VDW) and electro-
+static interactions.
+
+In this study, 4 different I-Mt systems were simulated for 1 to
+10 water molecules per unit cell, indicating monolayer the (1 W)
+and bilayer (2 W) hydration status of the MLCs. In general, 44 cases
+
+Fig. 2. The supercell structure of MLCs. Two middle layers are Mt and top and
+bottom layers are illite Si4+, Al3+, Mg2+, K+, Na+, O
+, and H+ are colored as yellow,
+gray, green, violet, blue, red, and white, respectively.
+
+ 
+
+3
+
+M. Ghasemi and M. Shariﬁ
+
+Journal of Molecular Liquids 335 (2021) 116188
+
+were simulated, and in all simulations, water molecules were
+randomly distributed in the interlayers after the distribution of
+counterions in the middle of interlayers.
+
+3. Results
+
+3.1. Swelling and basal spacing
+
+The MLCs crystalline swelling process was characterized by the
+basal spacing d-value, deﬁning as the distance between tops of two
+consecutive clay sheets for four different simulated systems as the
+function of water molecules entering the interlayer. In the crys-
+talline swelling regime of clays, the interlayer’s basal spacing d-
+value presents stepwise increases, which indicate the transition
+between two different hydrate states. First, in each hydration state,
+some of the adsorbed water molecules hydrate counterions and
+form the hydration shells. This step is the primary reason for the
+interlayer expansion. Following this step, water content ﬁlls the
+available remained space between interlayers in which minor
+interlayer expansion will result [46].
+
+In this study, the pure Mt and illite interlayers’ negative charge
+was only compensated by adding Na+ and K+, respectively. More-
+over, due to the difference in the required number of
+cations - Na+ ions and K+ ions that we inserted between two I-Mt
+interlayers in I (HC)-Mt (LC) and I (LC)-Mt (LC) simulation systems,
+an interlayer with 7 Na+ and 18 K+ for I (HC)-Mt (LC) and 7 Na+ and
+10 K+ for I (LC)-Mt (LC) were selected for analysis.
+
+The d-values of pure Mt interlayer distance were consistent
+with previously published experimental values and simulated
+results [22,32,36]. The basal spacing d-value of pure illite interlay-
+ers was in good agreement with recently published research by Li
+et al.[37]. It should be noted that due to applying a range of charge
+densities and charge site locations in previous studies, slight differ-
+ences in both simulated and experimental results are acceptable.
+Moreover, some of the small differences between the computed
+and experimental results may be incorporated into the overesti-
+mated surface-ion interaction for the surface oxygens in the
+CLAYFF force ﬁeld.
+
+Fig. 3a-d shows the group based on the absolute basal spacing
+of interlayers for four distinct systems. Moreover, for a better
+understanding of the swelling behavior of interlayers, the percent-
+age of the relative increase in basal spacing of interlayers which are
+computed bases on their dry state, are presented in Fig. 3e-h.
+
+In general observation, they demonstrated that (i) the general
+trends of the computed absolute basal spacing of interlayers in
+each system were relatively similar, (ii) the absolute basal spacing
+d-values of interlayers expanded similarly for both I (LC)-Mt (HC)
+and the I (LC)-Mt (LC) during 1 W and 2 W hydrate statues, how-
+ever, the slight difference between the absolute d-values were
+observed for I (HC)-Mt (HC) and I (HC)-Mt (LC) in the presence of
+high water concentrations, (iii) considering the percentage of the
+relative increase in d-values of
+interlayers, Mt-Mt interlayer
+swelled the most compared to the other systems, (iv) in almost
+all cases, swelling of the I-Mt clay were analogous to the I-I. This
+revealed the dominant rule of K+ in the swelling behavior of I-
+Mt. However, for the case of I (LC)-Mt (HC) and in comparison with
+I (HC)-Mt (HC), an increasing number of Na+ in the presence of
+lower concentrations of K+ gave rise to a higher basal spacing d-
+value of I-Mt interlayer. In what follows, we provide more in-
+depth insight into the observed swelling characteristic behavior
+of interlayers by considering the relative basal spacing d values.
+
+Comparing the swelling curve of
+
+interlayers in Fig. 3e-h
+revealed that the order of swelling in the symmetric Mt-Mt inter-
+layer was higher than other interlayers in all simulated MLCs. To
+understand the reasons behind the swelling behavior of systems,
+
+4
+
+three factors of hydration enthalpy of the interlayer counterions,
+charge site locations, and charge quantity were considered for dif-
+ferences in the interlayer distance. As we know, the lower the
+hydration enthalpy of cations, the less interlayer swelling will
+result. Since Na+ compared to K+ has a higher hydration
+enthalpy-that is  406 and  320 kJ mol 1, respectively, the pres-
+ence of Na+ leads to an increase in the interlayer distance as a
+result of the formation of a larger hydration shell. The difference
+in the basal spacing d-values of both the symmetric Mt-Mt and I-
+I was not restricted to only hydration enthalpy of counterions.
+Indeed, their structural differences in respect of the charge site
+location and charge amount also had a great inﬂuence on the inter-
+action of the cations and clay surfaces. In more detail, the main
+negative charge of Mt clay sheets was due to octahedral substitu-
+tions of Al3+ with Mg2+, however, illite sheets were more negatively
+charged on the tetrahedral ones. Differences between charge loca-
+tions culminated in a more strong interaction of counterions with
+the illite surface. This is why the symmetric I-I interlayer had less
+tendency to swell compared to the Mt-Mt interlayer. Furthermore,
+in all cases, the I-Mt interlayers behaved fairly as similar to the I-I
+interlayers except in the I (LC)-Mt (HC). In this case, the basal spac-
+ing d-values were approximately the average interlayer distance
+values of I-I and Mt-Mt for each separated water content. The
+lower tetrahedral charge density of the illite sheet compared to
+the high octahedral charge density of the Mt clay sheet as well
+as the relative increase in Na+ in comparison with K+, may result
+in such swelling behavior.
+
+In order to investigate the effect of the charge amounts and
+charge locations on the swelling behavior of interlayers, the rela-
+tive basal spacing curves were grouped by the interlayer types in
+Fig. 4. First, we assessed the effect of charge amounts on the Mt-
+Mt and I-I interlayers’ swelling behavior, which are octahedrally
+and tetrahedrally charged, respectively. Then, we look deep insight
+into the inﬂuence of both mentioned factors on the changes of I-Mt
+clay interlayer distance.
+
+Fig. 4 indicates that the general trends in the basal spacing d-
+value of both Mt-Mt interlayers were similar. Also, hydration states
+of 1 W and 2 W and transition to them were manifest. At both high
+and low water contents, the highly charged Mt clay sheet swelled
+more compared to the slightly charged one. This is mainly due to
+the weak counterion-clay surface interactions and high hydration
+enthalpy of Na+, which resulted in forming of fully hydrated ions.
+In fact, in the presence of more Na+ between the Mt-Mt interlayer,
+more clay swelling was anticipated [29,37,46]. Also, Fig. 4 indicates
+that the overall transition was the same for both I-I interlayers.
+Regardless of the lower extension of the I-I interlayer compared
+to the Mt-Mt interlayer, the presence of K+, as a low hydration
+enthalpy counterion between the I-I interlayer region led to mono-
+tonically swelling of the clay. As is shown, the more K+ in the inter-
+layer, the more smoothly changes happened while clay swelling. In
+addition, for highly charged illite clay sheets, the delay in transition
+was observed due to the high number of K+ compared to the case
+with lower charge density and their interaction with tetrahedral
+sheets of illite. Considering the basal spacing d-value, during the
+ﬁrst stage of hydration (1 W), the rate of changes in the basal spac-
+ing of highly charged illite was a bit larger than the other cases.
+However, at the compacted double layer water stage, the trend
+was reversed in which the illite with higher charge density showed
+less tendency to swell. In fact, high charge density on the tetrahe-
+dral sheet of the illite and the more number of K+ were the major
+reasons for the less-swelling behavior of illite compared with Mt.
+As was mentioned, during the 1 W hydration state, illite with
+low charged density had less tendency to expand compared to
+the highly charged one. This means that presence of a lower num-
+ber of K+ leaded to such behavior. During the 2 W hydration state,
+however, the powerful interaction between K+ with the highly
+
+M. Ghasemi and M. Shariﬁ
+
+Journal of Molecular Liquids 335 (2021) 116188
+
+Fig. 3. The absolute (a-d) and relative (e-h) basal spacing value of the clay interlayers as a function of water contents, grouped by the charge amount and charge locations.
+
+charged tetrahedral sheets was the major reason for the lower
+expansion of the interlayer in comparison with the low-charged
+one. It should be mentioned that the obtained information of I-I
+interlayer swelling tendency is consistent with the recently pub-
+lished paper by Li et al. [37].
+
+Fig. 5a-f compares the relative basal spacing variation of I-Mt
+clay interlayer as a function of charge amounts and charge site
+locations. To better gain a detailed understanding of the differ-
+ences between the basal spacing of I-Mt clay interlayers, we
+
+grouped the basal spacing curve of every two interlayers in a
+graph. In this regard, the following points are worth mentioning:
+(i) For the I-Mt clay interlayer in which illite had high charge den-
+sity on the tetrahedral sheet, the swelling behavior of the I-Mt clay
+interlayer was reasonably independent of charge amounts of the
+Mt, which is octahedrally charged. (Fig. 5a), (ii) When the I-Mt clay
+interlayer had low tetrahedral charge density on the illite sheets,
+charge amounts of the Mt played a signiﬁcant role in the swelling
+behavior of the interlayer. In more detail, the lower charge of illite
+
+5
+
+M. Ghasemi and M. Shariﬁ
+
+Journal of Molecular Liquids 335 (2021) 116188
+
+ 
+)
+
+Å
+
+(
+ 
+g
+n
+
+i
+c
+a
+p
+s
+-
+d
+ 
+e
+v
+i
+t
+a
+l
+e
+R
+%
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+0
+
+1
+
+2
+
+I (HC)-I (HC)
+I (LC)-I (LC)
+Mt (HC)-Mt (HC)
+Mt(LC)-Mt(LC)
+
+5
+
+4
+
+3
+7
+n(H2O) per unit cell 
+
+6
+
+8
+
+9
+
+10
+
+Fig. 4. Comparison of the relative basal spacing of Mt-Mt and I-I interlayers as a
+function of charge amounts.
+
+sheets and the more charge of Mt sheets in the I-Mt clay interlayer
+resulted in higher swelling and distance of interlayer (Fig. 5b-c,f),
+(iii) The swelling behavior of a system including a high charge illite
+sheet, regardless of the charge amounts of Mt, was similar to the I-
+Mt clay interlayer. The reasons behind such behavior of I-Mt clay
+interlayers are related to the following key important facts. First,
+the identity of the interlayer’s counterions. In mixed-ion MLCs, a
+
+high fraction of K+ reduces the swelling tendency of interlayers.
+This is due to no powerful attraction between K+ and water mole-
+cules. However, in the same fraction of K+ and Na+, the possibility
+of swelling behavior of clay increases [57]. Second, charge locations
+and charge amounts. When MLCs are more negatively charged on
+the tetrahedral sheet of illite, the interaction between counterions
+and surface sheet will increase, in which the possibility of their
+hydration is reduced, especially for Na+. On the other hand, in
+the case of the low charge density of I-Mt clay, no serious hydra-
+tion was observed due to fewer Na+.
+
+3.2. Atomic density proﬁle
+
+The distribution of interlayer cations and water molecules in
+the clay interlayers were quantiﬁed by the one-dimension atomic
+density proﬁle for 1 W and 2 W hydrate states and are illustrated
+in Figs. 6–8. Comparison of the atomic density proﬁles of simulated
+systems give a better insight into the effect of charge locations and
+charge density on the interactions of counterions with the clay
+surface.
+
+Fig. 6a-d present the symmetric Mt interlayer systems’ density
+proﬁles with high charge and low charge density on the octahedral
+sheet of the clays. For both cases, in the 1 W hydrate state, Na+
+
+ 
+)
+
+Å
+
+(
+ 
+
+g
+n
+i
+c
+a
+p
+s
+-
+d
+ 
+e
+v
+i
+t
+a
+l
+e
+R
+%
+
+ 
+
+ 
+)
+
+Å
+
+(
+ 
+
+g
+n
+i
+c
+a
+p
+s
+-
+d
+ 
+e
+v
+i
+t
+a
+l
+e
+R
+%
+
+ 
+
+ 
+)
+
+Å
+
+(
+ 
+
+g
+n
+
+i
+c
+a
+p
+s
+-
+d
+ 
+e
+v
+i
+t
+a
+l
+e
+R
+%
+
+ 
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+0
+
+1
+
+2
+
+I-Mt 
+I(HC)-Mt(HC)
+I(HC)-Mt(LC)
+
+5
+
+4
+
+3
+7
+n(H2O) per unit cell 
+
+6
+
+I-Mt 
+
+I(HC)-Mt(LC)
+I(LC)-Mt(HC)
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+0
+
+1
+
+2
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+0
+
+1
+
+2
+
+5
+
+4
+
+3
+7
+n(H2O) per unit cell 
+
+6
+
+I-Mt 
+
+I(HC)-Mt(LC)
+I(LC)-Mt(LC)
+
+5
+
+4
+
+3
+n(H2O) per unit cell 
+
+6
+
+7
+
+ 
+)
+
+Å
+
+(
+ 
+
+g
+n
+i
+c
+a
+p
+s
+-
+d
+ 
+e
+v
+i
+t
+a
+l
+e
+R
+%
+
+ 
+
+ 
+)
+
+Å
+
+(
+ 
+
+g
+n
+i
+c
+a
+p
+s
+-
+d
+ 
+e
+v
+i
+t
+a
+l
+e
+R
+%
+
+ 
+
+ 
+)
+
+Å
+
+(
+ 
+
+g
+n
+
+i
+c
+a
+p
+s
+-
+d
+ 
+e
+v
+i
+t
+a
+l
+e
+R
+%
+
+ 
+
+(a)
+
+8
+
+9
+
+10
+
+(c) 
+9
+
+10
+
+8
+
+(e) 
+10
+
+9
+
+8
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+0
+
+1
+
+2
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+0
+
+1
+
+2
+
+I-Mt 
+
+I(HC)-Mt(HC)
+
+I(LC)-Mt(HC)
+
+5
+
+4
+
+3
+7
+n(H2O) per unit cell 
+
+6
+
+I-Mt 
+
+I(HC)-Mt(HC)
+I(LC)-Mt(LC)
+
+5
+
+4
+
+3
+7
+n(H2O) per unit cell 
+
+6
+
+I-Mt 
+
+I(LC)-Mt(HC)
+I(LC)-Mt(LC)
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+0
+
+1
+
+2
+
+5
+
+4
+
+3
+n(H2O) per unit cell 
+
+6
+
+7
+
+(b) 
+10
+
+9
+
+8
+
+(d) 
+
+8
+
+9
+
+10
+
+(f) 
+10
+
+9
+
+8
+
+Fig. 5. Comparison of the relative basal spacing of the I-Mt interlayers as a function of charge amounts and charge locations.
+
+6
+
+M. Ghasemi and M. Shariﬁ
+
+Journal of Molecular Liquids 335 (2021) 116188
+
+120
+
+100
+
+80
+
+60
+
+40
+
+20
+
+ 
+
+ 
+e
+l
+i
+f
+o
+r
+P
+y
+t
+i
+s
+n
+e
+D
+
+0
+
+0
+
+1
+
+Mt (LC)-Mt (LC)  
+
+Ow
+Hw
+Na
+
+4
+
+3
+
+2
+
+5
+Interlayer Distance (Å) 
+Mt (HC)-Mt (HC)  
+
+120
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+ 
+e
+l
+i
+f
+o
+r
+P
+ 
+y
+t
+i
+s
+n
+e
+D
+
+Ow
+Hw
+Na
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Interlayer Distance (Å) 
+
+Mt (LC)-Mt (LC)  
+
+Ow
+Hw
+Na
+
+4
+
+3
+
+2
+7
+Interlayer Distance (Å) 
+
+5
+
+6
+
+Mt (HC)-Mt (HC)  
+
+Ow
+Hw
+Na
+
+100
+
+80
+
+60
+
+40
+
+20
+
+ 
+
+ 
+e
+l
+i
+f
+o
+r
+P
+y
+t
+i
+s
+n
+e
+D
+
+0
+
+0
+
+1
+
+100
+
+80
+
+60
+
+40
+
+20
+
+ 
+e
+l
+i
+f
+o
+r
+P
+ 
+y
+t
+i
+s
+n
+e
+D
+
+0
+
+0
+
+1
+
+2
+
+4
+
+3
+
+7
+Interlayer Distance (Å) 
+
+5
+
+6
+
+(c)
+9
+
+8
+
+(d)
+9
+
+8
+
+(a)
+6
+
+(b)
+6
+
+Fig. 6. Atomic density proﬁles of Na+, Ow and Hw for the monolayer (a,b) and bilayer (c,d) hydrated low charged Mt (a,c) and high charged Mt (b,d). Water oxygen and
+hydrogen are represented by red and blue, and Na+ by yellow.
+
+120
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+ 
+
+ 
+e
+l
+i
+f
+o
+r
+P
+y
+t
+i
+s
+n
+e
+D
+
+I (LC)-I (LC)  
+
+Ow
+Hw
+K
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Interlayer Distance (Å) 
+I (HC)-I (HC)  
+
+(a)
+6
+
+ 
+
+ 
+e
+l
+i
+f
+o
+r
+P
+y
+t
+i
+s
+n
+e
+D
+
+120
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+Ow
+Hw
+K
+
+0
+
+1
+
+I (LC)-I (LC) 
+
+Ow
+Hw
+K
+
+0
+
+1
+
+2
+
+4
+
+3
+
+7
+Interlayer Distance (Å) 
+
+5
+
+6
+
+I (HC)-I (HC)  
+
+Ow
+Hw
+K
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+ 
+
+ 
+e
+l
+i
+f
+o
+r
+P
+y
+t
+i
+s
+n
+e
+D
+
+100
+
+80
+
+60
+
+40
+
+20
+
+ 
+
+ 
+e
+l
+i
+f
+o
+r
+P
+y
+t
+i
+s
+n
+e
+D
+
+(c)
+
+9
+
+8
+
+(d)
+
+8
+
+9
+
+3
+
+2
+
+5
+Interlayer Distance (Å) 
+
+4
+
+(b)
+6
+
+0
+
+0
+
+1
+
+2
+
+4
+
+3
+
+7
+Interlayer Distance (Å) 
+
+5
+
+6
+
+Fig. 7. Atomic density proﬁles of K+, Ow, and Hw for the monolayer (a,b) and bilayer (c,d) hydrated low charged illite (a,c) and high charged illite (b,d). Water oxygen and
+hydrogen are represented by red and blue, and K+ by green.
+
+7
+
+M. Ghasemi and M. Shariﬁ
+
+Journal of Molecular Liquids 335 (2021) 116188
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+ 
+
+ 
+e
+l
+i
+f
+o
+r
+P
+y
+t
+i
+s
+n
+e
+D
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+ 
+
+e
+l
+i
+f
+o
+r
+P
+y
+t
+i
+s
+n
+e
+D
+
+ 
+
+ 
+e
+l
+i
+f
+o
+r
+P
+y
+t
+i
+s
+n
+e
+D
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+ 
+
+ 
+e
+l
+i
+f
+o
+r
+P
+y
+t
+i
+s
+n
+e
+D
+
+I (HC)-Mt (HC) 
+
+Ow
+Hw
+Na
+K
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Interlayer Distance (Å) 
+I (HC)-Mt (LC)  
+
+Ow
+Hw
+Na
+K
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Interlayer Distance (Å)
+
+I (LC)-Mt (HC)  
+
+Ow
+Hw
+Na
+K
+
+0
+
+1
+
+2
+
+3
+
+4
+
+Interlayer Distance (Å) 
+
+I (LC)-Mt (LC)  
+
+Ow
+Hw
+Na
+K
+
+0
+
+1
+
+3
+
+2
+
+5
+Interlayer Distance (Å) 
+
+4
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+ 
+
+ 
+e
+l
+i
+f
+o
+r
+P
+y
+t
+i
+s
+n
+e
+D
+
+ 
+
+ 
+e
+l
+i
+f
+o
+r
+P
+y
+t
+i
+s
+n
+e
+D
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+ 
+
+ 
+e
+l
+i
+f
+o
+r
+P
+y
+t
+i
+s
+n
+e
+D
+
+ 
+
+e
+l
+i
+f
+o
+r
+P
+y
+t
+i
+s
+n
+e
+D
+
+(a)
+
+(b)
+
+(c)
+
+5
+
+(d)
+
+6
+
+I (HC)-Mt (HC) 
+
+Ow
+Hw
+Na
+K
+
+3
+
+2
+7
+Interlayer Distance (Å) 
+
+4
+
+5
+
+6
+
+I (HC)-Mt (LC)  
+
+Ow
+Hw
+Na
+K
+
+4
+
+3
+
+2
+8
+Interlayer Distance (Å) 
+
+5
+
+6
+
+7
+
+I (LC)-Mt (HC)  
+
+Hw
+Ow
+Na
+K
+
+0
+
+1
+
+0
+
+1
+
+0
+
+1
+
+2
+
+Ow
+Hw
+Na
+K
+
+0
+
+1
+
+2
+
+5
+
+6
+
+4
+
+3
+
+7
+Interlayer Distance (Å)
+
+I (LC)-Mt (LC) 
+
+4
+
+3
+
+7
+Interlayer Distance (Å) 
+
+5
+
+6
+
+(e)
+
+8
+
+9
+
+(f)
+9
+
+(g)
+9
+
+8
+
+(h)
+
+8
+
+9
+
+Fig. 8. Atomic density proﬁles of K+,Na+, Ow, and Hw for the monolayer (a-d) and bilayer (e,h) hydrated I (HC)-Mt (HC) (a,e), I (HC)-Mt (LC) (b,f), I (LC)-Mt (HC) (c,g), I (LC)-Mt
+(LC) (d,h), Water oxygen and hydrogen are represented by red and blue, and Na + and K+ by yellow and green, respectively.
+
+formed a broad peak with a shoulder near each clay surface. For the
+highly charged Mt, however, the shoulder was sharper, which indi-
+cated higher hydration and, as a result, more interlayer swelling. As
+the water content increased and the 2 W hydrate state formed, the
+broad centered proﬁle of Na+ was changed to a single peak at the
+midplane signifying the outer-sphere surface complex (OSSC). It
+
+should be noted that the shaper cation peaks in 2 W hydrate state
+of the high charge Mt was may be due to the imposed forces of
+water molecules on counterions to be transferred from clay surface
+to the center of interlayers, not because of higher hydration [47].
+For the low charge Mt case, besides a single peak at the midplane,
+the clay surface represented the
+two small peaks near
+
+8
+
+M. Ghasemi and M. Shariﬁ
+
+Journal of Molecular Liquids 335 (2021) 116188
+
+inner-sphere surface complex (ISSC). This may be due to negative
+charge distribution on the tetrahedral layer and weakness of CLAFF
+force ﬁeld, which overestimates surface oxygen-ion interaction. In
+the case of the high charge Mt in the 2 W hydrate state, two minor
+peaks were observed approximately less than 1.0 Å from surface
+oxygen atoms. This was due to unusual adsorption within ditrigo-
+nal cavities on the basal surface, so-called ‘‘anhydrous” [29]. It
+should be noted that the anhydrous ions were weakly detectable
+for the 1 W state of the high charge Mt.
+
+Comparing the distribution of interlayer water molecules of Mt
+in Fig. 6.a-d revealed that in the case of 1 W hydrate state, the
+amount of charge density had no considerable inﬂuence on the
+water molecules distribution. On the other hand, in the 2 W
+hydrate state, an increase in charge density of the octahedral sheet
+resulting from the replacement of Al3+ with Mg2+ led to the pres-
+ence of more hydrogen atoms of water near the oxygen on the
+clay’s surface. Such interactions stemmed from the high polariza-
+tion power of Mg2+ compared to the Al3+ ions. In the 2 W hydrate
+state, the oxygen peaks around central cations for both the low
+charge Mt and high charge Mt were relatively the same value indi-
+cating the cation hydration’s similar tendency as previous analysis
+basal spacing d-value showed. The density proﬁle of the Mt system
+was also consistent with the earlier studies [29,30,46,47].
+
+The atomic density proﬁle of the illite interlayer water mole-
+cules and K+ are shown in Fig. 7a-d. At low charge density, the pref-
+erence of the interlayer K+ was forming the ISSC instead of the
+OSSC. For both 1 W and 2 W hydrate states, there was no sharp
+peak of cations in the midplane due to the low hydration enthalpy
+of K+ (Fig. 7.a,c). That was why the low tetrahedrally charged illite
+had less tendency to swell. Moreover, another insight that proved
+the less-swelling behavior of this system was that hydration states
+did not inﬂuence the distribution of water molecules. In more
+detail, the water oxygen’s prominent peak and the ﬁrst peak of
+water hydration were virtually remained unchanged in different
+hydration states.
+
+At high charge density, the two sharp peaks of K+ near the clay
+surface exhibited strong interaction of the ions with the surface,
+which resulted in forming the ISSC. Such interaction was due to
+the high charge density of tetrahedral sheet and was the major rea-
+son for the less-swelling behavior of illite compared to Mt. Further-
+more, in contrast to the Na+-Mt system that adding water to the
+interlayer forced the Na+ to move from hexagonal sites to the sites
+above the tetrahedral sheet, in high charge illite system, the dis-
+tance of K+ remained nearly unperturbed by increasing the water
+content. As similar to the low charge density, the interlayer water
+molecules’ distribution was not changed when the hydration state
+was transformed to 1 W from 2 W. The water oxygen’s prominent
+peaks and the ﬁrst peak of water hydration approximately
+remained constant at 2.5 Å and 1.5 Å for 1 W and 2 W hydration
+states, respectively (Fig. 7b,d). The obtained results also agree well
+with the previous study [37].
+
+Fig. 8a-f show the I-Mt clay interlayers’ atomic distribution for
+the simulated systems with different charge locations and charge
+sites at the 1 W and 2 W hydrate states. As discussed in the previ-
+ous section, two reasons for the lower hydration enthalpy of K+ and
+high charge density on tetrahedral sheets of illite were considered
+as effective items on low basal spacing d-value of I-Mt clay inter-
+layers. Considering the I (HC)-Mt (HC) and I (HC)-Mt (LC) interlay-
+ers, the atomic density proﬁles were relatively close to each other.
+Fig. 8a,b indicate that at 1 W hydrate state, the preference of coun-
+terions was forming strong bonds with clay surface instead of
+hydration with water molecules. In fact, the high charge density
+of the illite tetrahedral sheet was the major reason for the adsorp-
+tion of the counterions onto the clay surface and ISSC formation.
+The effect of the charge density was such that the strong interac-
+tion of Na+ with illite surface led to ions penetration in the ditrig-
+
+9
+
+onal cavities of the siloxane surface. This also suggested that the
+ditrigonal cavities were better ﬁts for Na+ than K+ [37]. On the
+Mt side of the I (HC)-Mt (HC) interlayer, ISSC was only formed
+for and K+, while their numbers were not comparable with the illite
+surface side. For the I (HC)-Mt (LC) interlayer, besides the ISSC of
+K+, the small peak of Na+ near the Mt side of the interlayer repre-
+sented the ISSC. The difference in forming ISSC of Na+ with Mt sur-
+face originated from various polarization power of Mg2+ in the
+octahedral sheet between the high charge Mt and low charge
+one. In more detail, comparing water molecules distribution of
+two discussed interlayers, Fig. 8a,b. indicate that water molecules
+preferred to establish strong hydrogen bonds with the Mt surface
+rather than the illite surface, which may be due to perturbable
+properties of K+ and even high charge density of the Mt on the
+octahedral sheet. The fact is that the more octahedral substitution
+of Al3+ with Mg 2+ in Mt clay, the shaper peak of the water hydro-
+gen near the Mt surface will result. High polarization power Mg2+
+compared to the Al3+ is responsible for the difference. Therefore,
+the more tendency of water molecules to be adsorbed on high
+charged Mt imposed force on Na+ to transfer from near the Mt sur-
+face to the middle of the interlayer. On the other hand, the denser
+layer substitution of the illite adsorbed detached ions on its sur-
+face. That was why no Na+ were present near the Mt surface to
+form the ISSC and almost all of the ions were concentrated near
+illite surface. As was shown in the previous section, in the 1 W
+hydration state, the swelling behavior of the I (HC)-Mt (HC) and I
+(HC)-Mt (LC) was analogous to illite as the less-swelling clay
+minerals.
+
+In the 2 W hydrate state, interlayer molecules’ distribution was
+generally similar for both simulated systems (Fig. 8e,f). A majority
+of K+ were placed close to the illite surface and were attributed to
+the ISSC. The weaker peak of K+ next to the Mt surface was also
+consistent with the ISSC. Because of the lower hydration enthalpy
+of K+ and less tendency to hydrate, as well as strong interaction
+with the clay mineral surface, there was no peak in the midplane.
+As the water content increased, although most of the Na+ remained
+close to the illite surface, some Na+ appeared at the midplane of the
+interlayer ascribing to the OSSC and cation hydration. As discussed
+in Section 3.1, the same swelling behavior was seen in the case of I
+(HC)-Mt (HC) and I (HC)-Mt (LC) for 2 W hydrate state in which
+increases in water content caused the slight increase in interlayer
+distance compared to the illite. The OSSC of Na+ in I-Mt clay clari-
+ﬁed the difference in the basal spacing d-values of studied systems.
+Moreover, as similar to the 1 W hydration state, ISSC of Na+ with
+Mt surface was only formed when the charge of Mt was low, and
+water molecules tended to be adsorbed by the Mt surface rather
+than illite, especially for the highly charged Mt.
+
+Fig. 8c,d,g,h demonstrate the atomic distribution in I-Mt where
+the Mt has variable charge densities while illite has low charge
+density on the tetrahedral sheet. The results manifested signiﬁcant
+differences with the two described cases, which included the
+highly charged illite. As is clear, the distribution of atoms depends
+on the layer charge density of clays. In the case of the high charge
+illite, most of the atoms preferred to have strong interaction with a
+clay surface. On the other hand, it seems that when the system
+included the low-charge illite, hydration enthalpy of counterions
+played major role in the swelling behavior of the system. Fig. 8c
+shows that the interlayer Na+ were mainly presented in the middle
+of the interlayer with a relative tendency towards the illite surface
+at the 1 W hydrate state. While the majority of Na+ were dis-
+tributed near the illite surface rather than the midplane for the I
+(LC)-Mt (LC) interlayer at 1 W hydrate state. That contributed to
+more swelling of the I (LC)-Mt (HC) interlayer. Comparing the
+interlayer K+ distribution, most of the K+ formed ISSC near both
+sides of the clay surface instead of creating the OSSC (Fig. 8c,d).
+This is mainly related to their low hydration enthalpy. In addition,
+
+M. Ghasemi and M. Shariﬁ
+
+Journal of Molecular Liquids 335 (2021) 116188
+
+1W
+2W
+
+(b)
+
+ 
+)
+r
+(
+ 
+
+g
+
+3
+
+2
+
+1
+
+0
+
+30
+
+24
+
+18
+
+12
+
+6
+
+0
+
+30
+
+24
+
+18
+
+12
+
+6
+
+0
+
+ 
+)
+r
+(
+ 
+
+g
+
+ 
+)
+r
+(
+ 
+
+g
+
+1W
+2W
+
+(a)
+
+0
+
+1
+
+2
+
+3
+
+1W
+2W
+
+0
+
+1
+
+2
+
+3
+
+6
+
+5
+
+7
+4
+Distance (Å) 
+
+6
+
+5
+
+4
+7
+Distance (Å) 
+
+8
+
+9
+
+10
+
+(c)
+
+8
+
+9
+
+10
+
+0
+
+1
+
+2
+
+3
+
+6
+
+5
+
+7
+4
+Distance (Å) 
+
+ 
+)
+r
+(
+ 
+
+g
+
+3
+
+2
+
+1
+
+0
+
+1W
+2W
+
+0
+
+1
+
+2
+
+3
+
+6
+
+5
+
+4
+7
+Distance (Å) 
+
+8
+
+9
+
+10
+
+(d)
+
+8
+
+9
+
+10
+
+Fig. 9. RDF for Na+-OW and Na+-Os at monolayer hydrate state (black) and bilayer hydrate state (red), Mt (HC)- Mt (HC) (a,b) and Mt (LC)-Mt (LC) (c,d).
+
+similar to the previous cases we studied, the preference of the
+water molecule had hydrogen bonds with Mt surface, as the shaper
+peak of hydrogen was shown (Fig. 8c,d.).
+
+In the 2 W hydrate state of I (LC)-Mt (LC) and I (LC)-Mt
+(HC), the distribution of ions was relatively analogous to each
+other (Fig. 8g,h). For both K+ and Na+ in the I (LC)-Mt (LC)
+interlayer, the presence of two peaks near clay surfaces and a
+single peak at the midplane indicated ISSC and OSSC, respec-
+interlayer, although K+ were
+tively.
+
+In the I
+
+(LC)-Mt
+
+(HC)
+
+distributed as similar as the former case, Na+ formed a rela-
+tively sharp peak at the midplane and ISSC near the illite sur-
+face with no interaction to the Mt surface. As was mentioned,
+the higher tendency of water molecules to the high charge Mt
+surface pushed the Na+ to the middle of the interlayer. In addi-
+tion, due to the low charge density of illite on the tetrahedral
+sheet, no strong interactions were observed so as to adsorb
+these detached ions. As a result, more Na+ were hydrated by
+water molecules that culminated in more swelling.
+
+10
+
+8
+
+6
+
+4
+
+2
+
+0
+
+10
+
+8
+
+6
+
+4
+
+2
+
+0
+
+ 
+)
+r
+(
+ 
+
+g
+
+ 
+)
+r
+(
+ 
+g
+
+1W
+2W
+
+(a)
+
+0
+
+1
+
+2
+
+3
+
+1W
+2W
+
+0
+
+1
+
+2
+
+3
+
+6
+
+5
+
+7
+4
+Distance (Å) 
+
+6
+
+5
+
+4
+7
+Distance (Å) 
+
+8
+
+9
+
+10
+
+(c)
+
+8
+
+9
+
+10
+
+ 
+)
+r
+(
+ 
+
+g
+
+ 
+)
+r
+(
+ 
+g
+
+4
+
+3
+
+2
+
+1
+
+0
+
+4
+
+3
+
+2
+
+1
+
+0
+
+1W
+2W
+
+(b)
+
+0
+
+1
+
+2
+
+3
+
+6
+
+5
+
+4
+Distance (Å) 
+
+7
+
+8
+
+9
+
+10
+
+1W
+2W
+
+(d)
+
+0
+
+1
+
+2
+
+3
+
+6
+
+5
+
+4
+7
+Distance (Å) 
+
+8
+
+9
+
+10
+
+Fig. 10. RDF for K+-OW and K+-Os at monolayer hydrate state (black) and bilayer hydrate state (red), I (HC)- I (HC) (a,b) and I (LC)- I (LC) (c,d).
+
+10
+
+M. Ghasemi and M. Shariﬁ
+
+3.3. Radial distribution functions
+
+Interaction between interlayer ions and water/surface of clay
+sheet was explored by calculating RDF g(r) of Na+-Ow/Os and K+-
+Ow/Os in the Mt-Mt, I-I, and I-Mt with various charge density and
+charge location. In this analysis, the surface oxygen atom of a clay
+sheet and a water oxygen atom are symbolized by Os and Ow,
+respectively. In all simulated cases, regardless of variations in
+charge density, the main peak location of Na+-Ow and K+-Ow
+attributing to the ﬁrst hydration shell appear at about 2.4 Å and
+2.78 Å, respectively, which agree with previous studies [57-59].
+
+Journal of Molecular Liquids 335 (2021) 116188
+
+Fig. 9 demonstrates the RDFs for the Mt-Mt systems. The
+height of the peak of Na+-Os for Mt (HC)-Mt (HC) was higher
+than the low charged Mt. This may be interpreted that the
+highly charged Mt attracted more Na+ towards the clay surface,
+however, this was mainly due to the presence of more Na+.
+Also, an increase in water content
+led to signiﬁcant
+changes in the location of Na+ from the surface to midplane
+of the interlayer for both types of Mt conﬁrmed it. As was men-
+tioned, the higher number of counterions gives rise to more
+swelling. That is why the Mt-Mt with more charge experience
+more expansion.
+
+that
+
+1W
+2W
+
+(a)
+
+0
+
+1
+
+2
+
+3
+
+1W
+2W
+
+6
+
+5
+
+4
+Distance (Å) 
+
+7
+
+8
+
+9
+
+10
+
+(c)
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+Distance (Å) 
+
+1W
+2W
+
+(e)
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+Distance (Å) 
+
+1W
+2W
+
+(g)
+
+28
+24
+20
+16
+12
+8
+4
+0
+
+28
+24
+20
+16
+12
+8
+4
+0
+
+28
+24
+20
+16
+12
+8
+4
+0
+
+28
+24
+20
+16
+12
+8
+4
+0
+
+ 
+)
+r
+(
+ 
+
+g
+
+ 
+)
+r
+(
+ 
+
+g
+
+ 
+)
+r
+(
+ 
+
+g
+
+ 
+)
+r
+(
+ 
+
+g
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+Distance (Å) 
+
+0
+
+1
+
+2
+
+3
+
+5
+
+4
+
+6
+Distance (Å) 
+
+7
+
+8
+
+9
+
+10
+
+Fig. 11. RDF for Na+-OW and Na+-Os at monolayer hydrate state (black) and bilayer hydrate state (red), I (HC)-Mt (HC) (a,b), I (HC)-Mt (LC) (c,d), I (LC)-Mt (HC) (e,f), and I (LC)-
+Mt (LC) (g,h).
+
+11
+
+ 
+)
+r
+(
+ 
+
+g
+
+ 
+)
+r
+(
+ 
+
+g
+
+3
+
+2
+
+1
+
+0
+
+3
+
+2
+
+1
+
+0
+
+1W
+2W
+
+(b)
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+Distance (Å) 
+
+1W
+2W
+
+(d)
+
+0
+
+1
+
+2
+
+3
+
+6
+
+5
+
+4
+Distance (Å) 
+
+7
+
+8
+
+9
+
+10
+
+1W
+2W
+
+(f)
+
+0
+
+1
+
+2
+
+3
+
+6
+
+5
+
+4
+Distance (Å) 
+
+7
+
+8
+
+9
+
+10
+
+1W
+2W
+
+(h)
+
+3
+
+2
+
+1
+
+0
+
+3
+
+2
+
+1
+
+0
+
+ 
+)
+r
+(
+ 
+
+g
+
+ 
+)
+r
+(
+ 
+
+g
+
+M. Ghasemi and M. Shariﬁ
+
+Journal of Molecular Liquids 335 (2021) 116188
+
+14
+12
+10
+8
+6
+4
+2
+0
+
+ 
+)
+r
+(
+
+g
+
+1W
+2W
+
+0
+
+1
+
+2
+
+3
+
+14
+12
+10
+8
+6
+4
+2
+0
+
+14
+12
+10
+8
+6
+4
+2
+0
+
+14
+12
+10
+8
+6
+4
+2
+0
+
+ 
+)
+r
+(
+
+g
+
+ 
+)
+r
+(
+
+g
+
+ 
+)
+r
+(
+
+g
+
+1W
+2W
+
+0
+
+1
+
+2
+
+3
+
+1W
+
+2W
+
+0
+
+1
+
+2
+
+3
+
+1W
+2W
+
+0
+
+1
+
+2
+
+3
+
+(a)
+
+ 
+)
+r
+(
+
+g
+
+7
+
+8
+
+9
+
+10
+
+(c)
+
+ 
+)
+r
+(
+
+g
+
+5
+
+4
+
+6
+Distance (Å) 
+
+4
+
+3
+
+2
+
+1
+
+0
+
+4
+
+3
+
+2
+
+1
+
+0
+
+1W
+2W
+
+(b)
+
+0
+
+1
+
+2
+
+3
+
+1W
+2W
+
+6
+
+5
+
+4
+Distance (Å) 
+
+7
+
+8
+
+9
+
+10
+
+(d)
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+Distance (Å) 
+
+5
+
+4
+
+6
+Distance (Å) 
+
+5
+
+4
+
+6
+Distance (Å) 
+
+5
+
+4
+
+6
+Distance (Å) 
+
+7
+
+8
+
+9
+
+10
+
+(e)
+
+7
+
+8
+
+9
+
+10
+
+(g)
+
+7
+
+8
+
+9
+
+10
+
+4
+
+3
+
+2
+
+1
+
+0
+
+4
+
+3
+
+2
+
+1
+
+0
+
+ 
+)
+r
+(
+
+g
+
+ 
+)
+r
+(
+
+g
+
+1W
+
+2W
+
+(f)
+
+0
+
+1
+
+2
+
+3
+
+1W
+
+2W
+
+0
+
+1
+
+2
+
+3
+
+5
+
+4
+
+6
+Distance (Å) 
+
+6
+
+5
+
+4
+Distance (Å) 
+
+7
+
+8
+
+9
+
+10
+
+(h)
+
+7
+
+8
+
+9
+
+10
+
+Fig. 12. RDF for K+-OW and Na+-Os at monolayer hydrate state (black) and bilayer hydrate state (red), I (HC)-Mt (HC) (a,b), I (HC)-Mt (LC) (c,d), I (LC)-Mt (HC) (e,f), and I (LC)-
+Mt (LC) (g,h). (For interpretation of the references to colour in this ﬁgure legend, the reader is referred to the web version of this article.)
+
+Fig. 10 also presents the RDF value of K+-Ow/Os in I-I systems.
+Owing to the low hydration enthalpy of K+, the value of rk-Os/Ow
+was considerably lower than rNa-Os/Ow. In addition, the RDFs of rk-
+Os conﬁrmed the results of both basal spacing d-values and proﬁle
+density of I-I. When water content increased, no K+ migrated to the
+middle of the illite clay interlayer. Indeed, low hydration enthalpy
+of K+ as well as tetrahedrally charged of illite were the reasons of
+the less-swelling behavior of illite compared to Mt.
+
+Fig. 11 presents the RDFs of the Na+-Ow/Os in I-Mt clays with
+different charge densities and charge site locations. In all cases,
+the gradual increase in water content between interlayers gave rise
+to a decrease in the intensity of the main peaks of Na+-Ow. As is
+shown, the highest central peak Na+-Ow was for the I (LC)-Mt
+(HC) case, which was in agreement with previous results indicating
+
+the great swelling behavior of the MLCs. Considering the RDFs val-
+ues of Na+-Os, as water content increased in which monolayer
+hydrate state was changed to bilayer one, in general, a decrease
+in the height of peak indicated moving interlayer counterions
+towards the midplane of the interlayer. It should be noted that ions
+immigration behavior was not the same and was dependent on the
+charge density of clay sheet, which affected counterions-clay sur-
+face interaction. The results revealed that the presence of the high
+charge illite in the MLCs, most of the Na+ with ISSC prefer to remain
+near the clay surface. This is due to the strong adsorption of the Na+
+on the clay sheet and an ‘‘anhydrous” behavior. In addition, the
+interesting obtained result was that in the I (HC)-Mt (HC), the ﬁrst
+main peak of Na+-Os for the bilayer hydrate state was higher com-
+pared to the monolayer one. This signiﬁcant increase was mostly
+
+12
+
+M. Ghasemi and M. Shariﬁ
+
+Journal of Molecular Liquids 335 (2021) 116188
+
+due to the adsorption of Na+ to illite clay sheets, which were
+detached through the pushing force of water molecules that had
+a strong tendency towards clay surface and hydrogen bonds forma-
+tion (Fig. 11b). Moreover, considerable changes in the location of
+interlayer ions in the I (LC)-Mt (HC) when water molecules
+increased conﬁrmed the high swelling behavior of this system.
+For the I (LC)-Mt (LC) case, a decrease in the height of peak location
+was also evident at the 2 W hydrate state in comparison with the
+monolayer one. However, the major reason for interlayer reluc-
+tance to expand was the fewer number of Na+ in the presence of K+.
+Fig. 12 also indicates the RDFs of the K+-Ow/Os in I-Mt. The RDF
+value of K+-Ow decreased as the water content increased. Needless
+to say that the main peak of K+-Ow for all four simulated cases was
+lower than Na+-Ow peaks because K+ was reluctant to fully hydrate.
+Furthermore, comparing the height of K+-Ow showed that when
+MLCs include high charge illite, the order of rcation-Ow was lower
+than the case with low charge illite. This is mainly due to strong
+cation-illite surface interaction. The RDFs of the K+-Os revealed
+no signiﬁcant changes in the location of K+, as the hydration state
+was changed to bilayer from monolayer. The reluctance of K+ to
+move towards the midplane was not only due to lower hydration
+enthalpy of the countetions but due to the presence of high charge
+clay sheet in the MLC, as well. In the presence of no high-charge
+clay sheet, some of the counterions immigrated to the midplane
+as water content increased (Fig. 11h). However, the reluctance of
+K+ to hydrate resulted in lower interlayer expansion.
+
+4. Summary
+
+The present work investigated the crystalline swelling behavior
+of K+-I-Na+-Mt with different layer charges by using molecular
+dynamics simulation. Through a comparison of four different I-
+Mt clay systems with various charge amounts and charge distribu-
+tion and simultaneous analysis of the basal spacing d-values, den-
+sity proﬁle, and RDFs to have a precise interpretation of systems,
+we observed subtle points in the crystalline swelling behavior of
+I-Mt structures. In the presence of highly tetrahedral charged illite
+in the I-Mt clay, regardless of the octahedral sheet charge quantity
+of Mt, the crystalline swelling behavior of the MLCs followed the
+swelling behavior of illite. However, the charge distribution of
+the Mt played pivotal roles in the swelling of the MLCs when the
+system included low-charged illite or the Mt and illite have the
+same charge density. In addition to the charge distribution of the
+MLCs, the counterion hydration effect can also be considered a crit-
+ical factor in the interlayer expansion of MLCs. Indeed, I-Mt clays
+with low charged illite were highly affected by the hydration
+effect. In the case of a low tetrahedral charge of illite, an increase
+in Na+ in respect of K+ changed the swelling behavior of I-Mt clay
+towards following Mt swelling behavior. However, the strong
+interaction of Na+ with highly tetrahedral charged of illite in I-Mt
+clay minimized the hydration effect. Furthermore, the I-Mt system,
+including Mt with highly octahedral charged sheet and illite with
+low charge density increased polarization of water molecules lead-
+ing to adsorption of water molecules near the Mt clay surface. This
+affected the polarization of the other atoms, and as a result of
+water molecule adsorption, Na+ immigrated into the midplane of
+the structure and started hydration. This increased the interlayer
+distance of the I-Mt clay system. Such behavior revealed how the
+Mt octahedral substitutions have a signiﬁcant inﬂuence on clay
+swelling. Overall, besides charge quantity, both tetrahedral and
+octahedral substitution greatly inﬂuence the interlayer expansion
+of clay systems.
+
+Declaration of Competing Interest
+
+The author declare that there is no conﬂict of interest.
+
+References
+
+[1] B.B. Velde, A. Meunier, The origin of clay minerals in soils and weathered rocks,
+
+Springer Science & Business Media, 2008.
+
+[2] A. Kausar, M. Iqbal, A. Javed, K. Aftab, H.N. Bhatti, S. Nouren, Dyes adsorption
+
+using clay and modiﬁed clay: a review, J. Mol. Liq. 256 (2018) 395–407.
+
+[3] V.B. Yadav, R. Gadi, S. Kalra, Clay based nanocomposites for removal of heavy
+
+metals from water: a review, J. Environ. Manage. 232 (2019) 803–817.
+
+[4] A. Sharma, S. Namsani, J.K. Singh, Molecular simulation of shale gas adsorption
+
+and diffusion in inorganic nanopores, Mol. Simul. 41 (5–6) (2015) 414–422.
+
+[5] S. Zhan, Y. Su, Z. Jin, W. Wang, M. Cai, L. Li, Y. Hao, Molecular insight into the
+boundary conditions of water ﬂow in clay nanopores, J. Mol. Liq. (2020)
+113292.
+
+[6] S. Li, C. Wang, X. Xu, L. Shi, N. Yin, Experimental and statistical studies on the
+thermal properties of frozen clay in Qinghai-Tibet Plateau, Appl. Clay Sci. 177
+(2019) 1–11.
+
+[7] J. Wang, Z. Chen, D. Shao, Y. Li, Z. Xu, C. Cheng, A.M. Asiri, H.M. Marwani, S. Hu,
+Adsorption of U (VI) on bentonite in simulation environmental conditions, J.
+Mol. Liq. 242 (2017) 678–684.
+
+[8] P. Sellin, O.X. Leupin, The use of clay as an engineered barrier in radioactive-
+
+waste management–a review, Clays Clay Miner. 61 (6) (2013) 477–498.
+
+[9] Z. Ma, R.P. Gamage, T. Rathnaweera, L. Kong, Review of application of
+molecular dynamic simulations in geological high-level radioactive waste
+disposal, Appl. Clay Sci. 168 (2019) 436–449.
+
+[10] G.G. Machado, S.N. Guilhen, V.V. Krupskaya, S.V. Zakusin, E.A. Tyupina, J.
+Harada, R. Vicente, R.P.D. SOUZA, L.G.D. ARAUJO, D.C. Espinosa, Brazilian clays
+as potential buffer materials for radioactive waste ﬁnal storage, 2020.
+
+[11] A. Vaccari, Preparation and catalytic properties of cationic and anionic clays,
+
+Catal. Today 41 (1–3) (1998) 53–71.
+
+[12] S.M. Dal Bosco, M. Gonçalves, F.C. Figueiredo, T. Galhardo, W.A. Carvalho,
+Sulfated pillared clay as catalyst in glycerol esteriﬁcation with caprylic acid,
+Waste Biomass Valorization 7 (5) (2016) 1279–1288.
+
+[13] Z. Hajizadeh, K. Valadi, R. Taheri-Ledari, A. Maleki, Convenient Cr (VI) Removal
+from Aqueous Samples: Executed by a Promising Clay-Based Catalytic System,
+Magnetized by Fe3O4 Nanoparticles and Functionalized with Humic Acid,
+ChemistrySelect 5 (8) (2020) 2441–2448.
+
+[14] M.I. Carretero, M. Pozo, Clay and non-clay minerals in the pharmaceutical and
+cosmetic industries Part II. Active ingredients, Appl. Clay Sci. 47 (3–4) (2010)
+171–181.
+
+[15] M.
+
+Jafarbeglou, M. Abdouss, A.M. Shoushtari, M.
+
+Jafarbeglou, Clay
+nanocomposites as engineered drug delivery systems, RSC Adv. 6 (55)
+(2016) 50002–50016.
+
+[16] K. Saha, K. Dutta, A. Basu, A. Adhikari, D. Chattopadhyay, P. Sarkar, Controlled
+delivery of tetracycline hydrochloride intercalated into smectite clay using
+polyurethane nanoﬁbrous membrane for wound healing application, Nano-
+Structures & Nano-Objects 21 (2020) 100418.
+
+[17] H. Zhong, Z. Qiu, D. Sun, D. Zhang, W. Huang, Inhibitive properties comparison
+of different polyetheramines in water-based drIing ﬂuid, J. Nat. Gas Sci. Eng. 26
+(2015) 99–107.
+
+[18] A. Moslemizadeh, S.K.Y. Aghdam, K. Shahbazi, S. Zendehboudi, A triterpenoid
+friendly and biodegradable clay swelling
+
+saponin as an environmental
+inhibitor, J. Mol. Liq. 247 (2017) 269–280.
+
+[19] M. Ghasemi, A. Moslemizadeh, K. Shahbazi, O. Mohammadzadeh, S.
+for
+
+Jafari, Primary evaluation of a natural surfactant
+
+Zendehboudi, S.
+inhibiting clay swelling, J. Petrol. Sci. Eng. 178 (2019) 878–891.
+
+[20] S.K.Y. Aghdam, A. Moslemizadeh, M. Madani, M. Ghasemi, K. Shahbazi, M.K.
+Moraveji, Mechanistic assessment of Seidlitzia Rosmarinus-derived surfactant
+for restraining shale hydration: a comprehensive experimental investigation,
+Chem. Eng. Res. Des. 147 (2019) 570–578.
+
+[21] S.R. Shadizadeh, A. Moslemizadeh, A.S. Dezaki, A novel nonionic surfactant for
+
+inhibiting shale hydration, Appl. Clay Sci. 118 (2015) 74–86.
+
+[22] R.W. Mooney, A.G. Keenan, L.A. Wood, Adsorption of water vapor by
+II. Effect of exchangeable ions and lattice swelling as
+
+montmorillonite.
+measured by X-ray diffraction, J. Am. Chem. Soc. 74 (6) (1952) 1371–1374.
+
+[23] K. Norrish,
+
+J.P. Quirk, Crystalline swelling of montmorillonite: Use of
+
+electrolytes to control swelling, Nature 173 (4397) (1954) 255–256.
+
+[24] E.S. Boek, P.V. Coveney, N.T. Skipper, Monte Carlo molecular modeling studies
+of hydrated Li-, Na-, and K-smectites: understanding the role of potassium as a
+clay swelling inhibitor, J. Am. Chem. Soc. 117 (50) (1995) 12608–12617.
+
+[25] M.L. Nehdi, Clay in cement-based materials: critical overview of state-of-the-
+
+art, Constr. Build. Mater. 51 (2014) 372–382.
+
+[26] B. Dazas, B. Lanson, A. DelvIe, J.L. Robert, S. Komarneni, L.J. Michot, E. Ferrage,
+Inﬂuence of tetrahedral layer charge on the organization of interlayer water
+and ions in synthetic Na-saturated smectites, J. Phys. Chem. C 119 (8) (2015)
+4158–4172.
+
+13
+
+M. Ghasemi and M. Shariﬁ
+
+Journal of Molecular Liquids 335 (2021) 116188
+
+[27] L. Sun, C.Y. Ling, L.P. Lavikainen, J.T. Hirvi, S. Kasa, T.A. Pakkanen, Inﬂuence of
+layer charge and charge location on the swelling pressure of dioctahedral
+smectites, Chem. Phys. 473 (2016) 40–45.
+
+[28] J.K. Fink, Petroleum Engineer’s Guide to Oil Field Chemicals and Fluids, 2012, 1,
+
+1–42.
+
+[29] S.L. Teich-McGoldrick, J.A. Greathouse, C.F. Jove-Colon, R.T. Cygan, Swelling
+properties of montmorillonite and beidellite clay minerals from molecular
+simulation: comparison of temperature, interlayer cation, and charge location
+effects, J. Phys. Chem. C 119 (36) (2015) 20880–20891.
+
+[30] W.B.F. Ngouana, A.G. Kalinichev, Structural arrangements of
+
+isomorphic
+substitutions in smectites: molecular simulation of the swelling properties,
+interlayer structure, and dynamics of hydrated Cs–montmorillonite revisited
+with new clay models, J. Phys. Chem. C 118(24) (2014) 12758–12773.
+
+[31] J. Qiu, G. Li, D. Liu, S. Jiang, G. Wang, P. Chen, X. Zhu, X. Cao, X. Lyu, Effect of
+layer charge characteristics on the distribution characteristics of H2O and Ca2
++ in Ca-montmorillonites interlayer space: Molecular dynamics simulation,
+Materials 12 (14) (2019) 2318.
+
+[32] A. Meleshyn, C. Bunnenberg, Swelling of Na∕ Mg-montmorillonites and
+hydration of interlayer cations: a Monte Carlo study, J. Chem. Phys. 123 (7)
+(2005) 074706.
+
+[33] D.A. Young, D.E. Smith, Simulations of clay mineral swelling and hydration:
+dependence upon interlayer ion size and charge, J. Phys. Chem. B 104 (39)
+(2000) 9163–9170.
+
+[34] F.R.C. Chang, N.T. Skipper, G. Sposito, Monte Carlo and molecular dynamics
+potassium 
+
+simulations
+in
+montmorillonite hydrates, Langmuir 14 (5) (1998) 1201–1207.
+
+structure
+
+of
+
+electrical
+
+double-layer
+
+[35] A. Chatterjee, T. Ebina, Y. Onodera, F. Mizukami, Effect of exchangeable cation
+on the swelling property of 2: 1 dioctahedral smectite—a periodic ﬁrst
+principle study, J. Chem. Phys. 120 (7) (2004) 3414–3424.
+
+[36] X.D. Liu, X.C. Lu, A thermodynamic understanding of clay-swelling inhibition
+
+by potassium ions, Angew. Chem. Int. Ed. 45 (38) (2006) 6300–6303.
+
+[37] X. Li, Q. Li, S. Yang, G. Yang, Swelling of clay minerals: dual characteristics of K+
+ions and exploration of critical inﬂuencing factors, PCCP 21 (4) (2019) 1963–
+1971.
+
+[43] J.A. Greathouse, R.T. Cygan, J.T. Fredrich, G.R. Jerauld, Molecular dynamics
+simulation of diffusion and electrical conductivity in montmorillonite
+interlayers, J. Phys. Chem. C 120 (3) (2016) 1640–1649.
+
+[44] N.T. Skipper, F.R.C. Chang, G. Sposito, Monte Carlo simulation of interlayer
+molecular structure in swelling clay minerals 1. Methodology, Clays Clay
+Miner. 43 (3) (1995) 285–293.
+
+[45] E. Ferrage, B. Lanson, L.J. Michot,
+
+J.L. Robert, Hydration properties and
+interlayer organization of water and ions in synthetic Na-smectite with
+tetrahedral
+layer charge. Part 1. Results from X-ray diffraction proﬁle
+modeling, J. Phys. Chem. C 114 (10) (2010) 4515–4526.
+
+[46] M. Rahromostaqim, M. Sahimi, Molecular dynamics simulation of hydration
+and swelling of mixed-layer clays, J. Phys. Chem. C 122 (26) (2018) 14631–
+14639.
+
+[47] M. Rahromostaqim, M. Sahimi, Molecular dynamics study of the effect of layer
+chlorite-
+
+charge and interlayer
+cations on swelling of mixed-layer
+montmorillonite clays, J. Phys. Chem. C 124 (4) (2020) 2553–2561.
+
+[48] C.E. Weaver, The distribution and identiﬁcation of mixed-layer clays in
+sedimentary rocks, Am. Mineral.: J. Earth Planet. Mater. 41 (3–4) (1956) 202–
+221.
+
+[49] R.C. Reynolds, J. Hower, The nature of interlayering in mixed-layer Illite-
+
+montmorillonites, Clays Clay Miner. 18 (1) (1970) 25–36.
+
+[50] J.H. Lee, S. Guggenheim, Single crystal X-ray reﬁnement of pyrophyllite-1 Tc,
+
+Am. Mineral. 66 (3–4) (1981) 350–357.
+
+[51] D. Van Der Spoel, E. Lindahl, B. Hess, G. Groenhof, A.E. Mark, H.J. Berendsen,
+GROMACS: fast, ﬂexible, and free, J. Comput. Chem. 26 (16) (2005) 1701–
+1718.
+
+[52] R.T. Cygan,
+
+J.J. Liang, A.G. Kalinichev, Molecular models of hydroxide,
+oxyhydroxide, and clay phases and the development of a general force ﬁeld,
+J. Phys. Chem. B 108 (4) (2004) 1255–1266.
+
+[53] T.I. Mizan, P.E. Savage, R.M. Ziff, Comparison of rigid and ﬂexible simple point
+charge water models at supercritical conditions, J. Comput. Chem. 17 (15)
+(1996) 1757–1770.
+
+[54] V.N. Romanov, Evidence of irreversible CO2 intercalation in montmorillonite,
+
+Int. J. Greenhouse Gas Control 14 (2013) 220–226.
+
+[38] M. Chávez-Páez, L. DePablo, J.J. DePablo, Monte Carlo simulations of Ca–
+
+[55] G. Bussi, D. Donadio, M. Parrinello, Canonical sampling through velocity
+
+montmorillonite hydrates, J. Chem. Phys. 114 (24) (2001) 10948–10953.
+
+rescaling, J. Chem. Phys. 126 (1) (2007) 014101.
+
+[39] D.E. Smith, Y. Wang, H.D. Whitley, Molecular simulations of hydration and
+
+[56] S. Nosé, M.L. Klein, Constant pressure molecular dynamics for molecular
+
+systems, Mol. Phys. 50 (5) (1983) 1055–1076.
+
+[57] J.H. Denis, M.J. Keall, P.L. Hall, G.H. Meeten,
+
+Inﬂuence of potassium
+ion-
+
+concentration on the swelling and compaction of mixed (Na, K)
+exchanged montmorillonite, Clay Miner. 26 (2) (1991) 255–268.
+
+[58] V. Marry, P. Turq, T. CartaIer, D. Levesque, Microscopic simulation of structure
+and dynamics of water and counterions in a monohydrated montmorillonite, J.
+Chem. Phys. 117 (7) (2002) 3454–3463.
+
+[59] P. Boulet, P.V. Coveney, S. Stackhouse, Simulation of hydrated Li+-, Na+-and K
++-montmorillonite/polymer nanocomposites using large-scale molecular
+dynamics, Chem. Phys. Lett. 389 (4–6) (2004) 261–267.
+
+swelling in clay minerals, Fluid Phase Equilib. 222 (2004) 189–194.
+
+[40] M.D. Foster, Geochemical studies of clay minerals: II—relation between ionic
+substitution and swelling in montmorillonites, Am. Mineral.: J. Earth Planetary
+Mater. 38 (11–12) (1953) 994–1006.
+
+[41] A. Seppälä, E. Puhakka, M. Olin, Effect of layer charge on the crystalline
+swelling of Na+, K+ and Ca2+ montmorillonites: DFT and molecular dynamics
+studies, Clay Miner. 51 (2) (2016) 197–211.
+
+[42] L. Sun, The Effects of Structural and Environmental Factors on the Swelling
+Behavior of Montmorillonite-Beidellite Smectites: a Molecular Dynamics
+Approach. University of Eastern Finland Faculty of Science and Forestry
+Department of Chemistry Dissertation, 2016.
+
+View publication stats
+View publication stats
+
+14
+
+
