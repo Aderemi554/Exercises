@@ -1,0 +1,130 @@
+Regarding the impact of charge location and charge
+density on clay swelling, previously reported results are restricted,
+and drawing the exact conclusions is nearly impossible. For exam-
+ple, Liu and Lu [36] showed that in large charge density on tetrahe-
+dral sheets, clay interlayer experiences more expansion compared
+to clay with a high charge density of octahedral sheets. These com-
+parisons were conducted for three different water contents. In
+comparing the swelling behavior of Otay- montmorillonite (Otay-
+Mt), in which concentration of charge is on octahedral sheets with
+Wyoming-Mt that has less charge density on octahedral sheets,
+Chávez-Páez et al. [38] revealed that interlayer expansion of the
+Otay-Mt is lower than Wyoming-Mt. Smith et al. [39] assessed
+the effect of octahedral charge density on swelling of Na-Mt, and
+they found that more charge density on octahedral sheets results
+in higher interlayer expansion. However, Foster [40] reported a
+reduction in swelling of Mt as the charge density of octahedral
+sheets increases. Seppälä et al. [41] claimed that the smaller the
+layer charge, the greater swelling would result. Sun [42] and Great-
+house et al. [43] found similar results. Skipper et al. [44] reported
+that increasing the tetrahedral charge layer of Na+-Mt leads to
+increasing interlayer expansion. Interaction of water with Mt and
+beidellite was studied by Teich-McGoldrick et al. [29]. They
+showed that in the case of low water content between interlayers,
+beidellite, which has a similar structure to illite, expands more
+than Mt. However, Mt showed more interlayer expansion at a high
+water content. Also, they observed that the beidellite formed the
+bilayer hydration state at low water content compared to Mt. More
+recently, Li et al. [37] found that clay minerals with different
+charge locations and charge densities display divergent swelling
+behaviors. They showed that K+ has dual characteristics in which
+their behavior as swelling inhibitors relies on the charge location
+of clay. However, Ferrage et al. [45] reported that due to the low
+hydration of K+ and their perturbable characteristics, they could
+act as a clay swelling inhibitor.
+
+Most of the studies related to clay swelling have been focused
+on pure clays. In 2018, for the ﬁrst time, the swelling behavior of
+mixed-layer clays (MLCs), including I-Mt clays for a wide range
+of water concentrations in the presence of Na+ and K+, were inves-
+tigated [46]. They showed that the swelling behavior of I-Mt is sig-
+niﬁcantly different from pure clay and depends on both clay types
+and interlayer cations. More recently, a comprehensive study was
+conducted on the swelling behavior of a chlorite-montmorillonite
+mixed-layer clay (CH-Mt MLC) as a function of interlayer cation
+including Na+, K+, and Cs+ [47].
+
+The fact is that in addition to the pure clays, plenty of MLCs can
+be found in various types of sedimentary rocks [48,49]. Among dif-
+ferent kinds of MLCs, illite-montmorillonite (I-Mt) is the most
+abundant compared to others such as CH-Mt or even illite-
+chlorite-montmorillonite (I-CH-Mt). As previously mentioned, var-
+ious factors affect the swelling behavior of pure clays. However,
+these factors may have different inﬂuences on the swelling behav-
+ior of MLCs. In the present study, we focused on I-Mt MLCs. As is
+known, both the illite and Mt consist of negatively charged octahe-
+dral sheets of alumina (O) and tetrahedral sheets of silica (T). They
+are categorized as TOT type clay which means that the octahedral
+sheet is located between two tetrahedral sheets. The negative
+charge of layers comes from the isomorphic substitution of layers
+in which Si+4 is replaced with Al+3 in tetrahedral sheets, and Al3+
+in octahedral sheets is substituted with Mg2+. The major difference
+between the two mentioned clays is related to the location of iso-
+morphic substitution. Most of the charge distribution of illite and
+Mt are on the tetrahedral and octahedral sheets, respectively. The
+interlayer counterions of Mt can be Na+, Ca2+, and Mg2+, and the
+
+illite is balanced by K+. As previously
+negative charge of
+mentioned, the nature of these cations also greatly inﬂuences the
+swelling of clays. Therefore, the presence of two types of counteri-
+ons, in this study Na+ and K+, with various concentrations between
+the two different clay sheets makes swelling process analysis more
+complex.
+
+Almost all previous investigations of the effects of charge distri-
+bution on clay swelling behavior have been limited to pure clay to
+date except works by Rahromostaqim and Sahimi [46,47]. How-
+ever, no comprehensive research has been conducted on the I-Mt
+MLCs with various charge densities and charge locations to know
+their effects on swelling behavior. In this work, the impacts of
+the surface charge distribution by considering charge density and
+charge location on the swelling behavior of K+-illite-Na+-
+montmorillonite (K+-I-Na+-Mt) were investigated for a wide range
+of water concentrations. Four mixed layers I-Mt clay mineral struc-
+tures with different charge densities (i.e., high charge (HC) and low
+charge (LC)) were considered. The molecular dynamics (MD) simu-
+lation technique has been applied to provide insight into the
+effects of the mentioned factors. To better understand the swelling
+mechanism, the results obtained from swelling behavior analyses
+of the pure Mt and pure illite interlayers are regarded as a refer-
+ence for comparison with the other simulated cases.
+
+The remainder of this paper is organized as follows. First, we
+describe the simulation systems and procedures in Section 2. Then,
+the results are presented in Section 3, and the summary of the
+paper is drawn in the last section.
+
+2. Methodology
+
+2.1. Model construction
+
+The 2:1 clay mineral models were constructed based on the
+pyrophyllite structure with a chemical formula of Al4Si8O20(OH)4.
+The lattice parameters of the pyrophyllite unit cell are: a = 5.16 Å,
+b = 8.97 Å, and c = 9.37 Å, and a = 91.5°, b = 100.46°, and c = 89.6°
+[50]. As is mentioned, Na+-Mt and K+-I were used with different
+charge site locations and charge densities on the octahedral and
+tetrahedral sheets to assess the swelling behavior of MLCs. The
+chemical structure of the clays is characterized by the random iso-
+morphic substitution of Al3+ by Mg2+ atoms and Si4+ by Al3+ atoms
+in the octahedral and the tetrahedral sheet, respectively. The iso-
+morphic substitutions also obey Loewenstein’s rule to avoid two
+adjacent substitutions. In the present study, four different types
+of mixed layers I-Mt clays were simulated that their chemical com-
+positions and a charge per unit cell (uc) of them are shown in
+Table1, and the initial structures of the clay mineral layer are
+demonstrated in Fig. 1.
+
+The supercell model of constructed I-Mt MLCs includes 4 clay
+sheets (two sheets each of illite and Mt), where each layer contains
+5  4 unit cells. As an example, for the case of I (HC)-Mt (HC) with
+20 unit cells, the model has 20 isomorphous substitutions of Al3+
+by Mg2+ in the octahedral sheets of Mt. In the illite clay sheets, 4
+Al3+ were replaced with Mg2+ in the octahedral sheet as well as
+replacement of 32 Si4+ with Al3+ in the tetrahedral sheet (16 in each
+tetrahedral sheet). To balance the generated negative charge of lay-
+ers, according to the charge quantity, counterions were added into
+the interlayers. Therefore, 10 Na+ and 18 K+ were added between
+the interlayer of Mt-Mt and I-I interlayers, while the remaining
+cations were distributed between I-Mt clay interlayers.
