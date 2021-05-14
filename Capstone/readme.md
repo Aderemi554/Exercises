@@ -1,1 +1,1 @@
-This folder contains different pieces that makes up my capstone 
+This folder contains different pieces that makes up my capstone project.
