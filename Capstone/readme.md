@@ -1,1 +1,1 @@
-This folder contains different
+This folder contains different pieces
