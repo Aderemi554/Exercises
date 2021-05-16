@@ -1,2 +1,2 @@
 # Strive
-Repository contains all the exercises and projects for strive school.
+Repository for all the exercises and projects for strive school.
